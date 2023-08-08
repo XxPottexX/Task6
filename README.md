@@ -9,7 +9,7 @@ Once you have the files on your device, open a python editor, and in the termina
 1. Main page
    ![Screenshot of the main page of the poll application. It displays the different polls available to the user to choose from. Top left 'Poll Appplication' is used as a back button to the main page.](https://github.com/XxPottexX/Task6/blob/master/Screenshot%20Main%20page.png "Main page")
 2. Poll
-   ![Screenshot of one of the polls with multiple choices. The user can only choose one and then vote.]("")
+   ![Screenshot of one of the polls with multiple choices. The user can only choose one and then vote.]("Poll example")
 3. Completed poll
    ![Screenshot of when the user has chosen his option and voted. A pie graph of the votes so far will appear beneath the vote choices.]("Screenshot Voted.png")
 
