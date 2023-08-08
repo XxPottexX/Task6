@@ -11,7 +11,7 @@ Once you have the files on your device, open a python editor, and in the termina
 2. Poll
    ![Screenshot of one of the polls with multiple choices. The user can only choose one and then vote.](https://github.com/XxPottexX/Task6/blob/master/Screenshot%20Poll%20example.png "Poll example")
 3. Completed poll
-   ![Screenshot of when the user has chosen his option and voted. A pie graph of the votes so far will appear beneath the vote choices.]("Screenshot Voted.png")
+   ![Screenshot of when the user has chosen his option and voted. A pie graph of the votes so far will appear beneath the vote choices.](https://github.com/XxPottexX/Task6/blob/master/Screenshot%20Voted.png "Pie chart")
 
 # Credits
  Jeandre Joguin-Rouxelle
