@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-<!--The template displays each polls information when a user chooses a poll to vote on-->
+
 {% block body %}
 
 <h2> {{ poll.question_text }} </h2>
@@ -7,7 +7,6 @@
   <h6> {{ poll.description }} </h6>
 </i>
 <hr class="my-4">
-<!--Using a Post mmethod to add a Vote object when the user clicks on the vote button-->
 <form method="post">
   {% csrf_token %}
   {% for choice in poll.choices.all %}
@@ -22,7 +21,7 @@
   <button class="btn btn-outline-success">Vote</button>
 </form>
 
-<!--When user has voted display the results of the poll so far-->
+
 {% if success_message %}
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <div id="piechart"></div>
