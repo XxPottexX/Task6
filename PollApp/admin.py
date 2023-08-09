@@ -1,7 +1,8 @@
 from django.contrib import admin
-from PollApp.models import Question, Choice, Vote
+from PollApp.models import Poll, Choice, Vote
 # Register your models here.
 
-admin.site.register(Question)
+# add the models to the databse and admin site
+admin.site.register(Poll)
 admin.site.register(Choice)
 admin.site.register(Vote)

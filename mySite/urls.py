@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+# add PollApp's url's
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('personal.urls')),
