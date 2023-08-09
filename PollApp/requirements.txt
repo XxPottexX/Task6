@@ -1,2 +1,2 @@
-Admin username: Jeandre / AdminUser  
+Admin username: Jeandre'
 Password : Jeandre2j1@

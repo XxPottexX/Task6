@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-# add PollApp to INSTALLED_APPS
+
 INSTALLED_APPS = [
     'PollApp',
     #'polls',
