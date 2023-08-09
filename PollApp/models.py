@@ -13,7 +13,7 @@ class Choice(models.Model):
 
 # This is the Poll model that contains the question, description and choices from the Choices model 
 # The class's str method returns the question
-class Question(models.Model):
+class Poll(models.Model):
     question_text = models.CharField(max_length=200)
     description = models.TextField(max_length=200, default="")
     choices = models.ManyToManyField(
@@ -28,7 +28,7 @@ class Question(models.Model):
 # The vote object will refer to Poll and Choice object both
 class Vote(models.Model):
     poll = models.ForeignKey(
-        Question, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
+        Poll, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
     choice = models.ForeignKey(
         Choice, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
     timestamp = models.DateTimeField(default=timezone.now())
