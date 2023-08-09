@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
-
+<!--This is a child parent and will be rendered in the master template's block tag-->
 {% block body %}
 
+<!--Here we are displaying each poll on the home page-->
 {% for poll in polls %}
 <div class="card">
   <div class="card-body">

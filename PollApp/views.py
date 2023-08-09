@@ -1,15 +1,15 @@
 from django.shortcuts import render
 from django.views import View
 
-from PollApp.models import Question, Choice, Vote
+from PollApp.models import Poll, Choice, Vote
 
 # Create your views here.
 
-
+# This HomeView will be the home page, were we'll show all the polls list
 class HomeView(View):
 
     def get(self, request):
-        poll = Question.objects.all()
+        poll = Poll.objects.all()
         return render(
             request,
             template_name="home.html",
@@ -17,11 +17,11 @@ class HomeView(View):
                 "polls": poll,
             }
         )
-
+# when the user clciks on a poll, it'll take the user to the page where they can vote on the poll.
 class PollView(View):
 
     def get(self, request, poll_id):
-        poll = Question.objects.get(id=poll_id)
+        poll = Poll.objects.get(id=poll_id)
         return render(
             request,
             template_name="poll.html",
@@ -35,7 +35,7 @@ class PollView(View):
 
         choice_id = requestData.get('choice_id')
 
-        poll = Question.objects.get(id=poll_id)
+        poll = Poll.objects.get(id=poll_id)
         choice = Choice.objects.get(id=choice_id)
         Vote.objects.create(
             poll=poll,
